@@ -29,16 +29,16 @@ public class CalculadoraTest {
     }
 
     @Test
-    void testDivisionPorCeroEnElPrimerNumero() {
+    void testDivisionPorCeroEnElprimerNumero() {
         assertThrows(ArithmeticException.class, () -> {
-            calculadora.division(10, 0);
+            calculadora.division(0, 5);
         });
     }
 
     @Test
     void testDivisionPorCeroEnElSegundoNumero() {
         assertThrows(ArithmeticException.class, () -> {
-            calculadora.division(0, 5);
+            calculadora.division(10, 0);
         });
     }
 
